@@ -14,7 +14,7 @@ cap.set(3, cam_width)
 cap.set(4, cam_height)
 past_time = 0
 
-detector = htm.HandDetector(detection_confidence=0.83)
+detector = htm.HandDetector(detection_confidence=0.86)
 
 devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
