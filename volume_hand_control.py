@@ -87,9 +87,9 @@ while True:
             cv2.rectangle(img, (50, int(volBar)), (85, 400), ui_color, cv2.FILLED)
             cv2.putText(img, f'{int(vol_percents)} %', (40, 450), cv2.FONT_HERSHEY_COMPLEX, 1, ui_color, 3)
 
-    cTime = time.time()
-    fps = 1 / (cTime - past_time)
-    past_time = cTime
+    current_time = time.time()
+    fps = 1 / (current_time - past_time)
+    past_time = current_time
 
     cv2.putText(img, f'FPS: {int(fps)}', (40, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 0, 0), 3)
 
